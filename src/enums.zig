@@ -1,6 +1,6 @@
 const w = @import("std").os.windows;
 
-pub const eAudioFlag = enum(c_int) {
+pub const AudioFlag = enum(c_int) {
     ActivateSwitchWheelAudio,
     AllowCutsceneOverScreenFade,
     AllowForceRadioAfterRetune,
@@ -38,7 +38,7 @@ pub const eAudioFlag = enum(c_int) {
     WantedMusicOnMission,
 };
 
-pub const eBlipColor = enum(c_int) {
+pub const BlipColor = enum(c_int) {
     White = 0,
     Red = 1,
     Green = 2,
@@ -46,7 +46,7 @@ pub const eBlipColor = enum(c_int) {
     Yellow = 66,
 };
 
-pub const eBlipSprite = enum(c_int) {
+pub const BlipSprite = enum(c_int) {
     Standard = 1,
     BigBlip = 2,
     PoliceOfficer = 3,
@@ -260,7 +260,7 @@ pub const eBlipSprite = enum(c_int) {
     DollarSignSquared = 434,
 };
 
-pub const eCameraShake = enum(c_int) {
+pub const CameraShake = enum(c_int) {
     Hand = 0,
     SmallExplosion,
     MediumExplosion,
@@ -274,7 +274,7 @@ pub const eCameraShake = enum(c_int) {
     DeathFail,
 };
 
-pub const eControl = enum(c_int) {
+pub const Control = enum(c_int) {
     NextCamera = 0,
     LookLeftRight = 1,
     LookUpDown = 2,
@@ -615,7 +615,7 @@ pub const eControl = enum(c_int) {
     MapPointOfInterest = 337,
 };
 
-pub const eRadioStation = enum(c_int) {
+pub const RadioStation = enum(c_int) {
     LosSantosRockRadio,
     NonStopPopFM,
     LosSantos,
@@ -635,7 +635,7 @@ pub const eRadioStation = enum(c_int) {
     VinewoodBoulevardRadio,
 };
 
-pub const eWindowTitle = enum(c_int) {
+pub const WindowTitle = enum(c_int) {
     CELL_EMAIL_BOD,
     CELL_EMAIL_BODE,
     CELL_EMAIL_BODF,
@@ -662,12 +662,12 @@ pub const eWindowTitle = enum(c_int) {
     PM_NAME_CHALL,
 };
 
-pub const eGender = enum(c_int) {
+pub const Gender = enum(c_int) {
     Male,
     Female,
 };
 
-pub const eDrivingStyle = enum(c_int) {
+pub const DrivingStyle = enum(c_int) {
     Normal = 0xC00AB,
     IgnoreLights = 0x2C0025,
     SometimesOvertakeTraffic = 5,
@@ -676,7 +676,7 @@ pub const eDrivingStyle = enum(c_int) {
     AvoidTrafficExtremely = 6,
 };
 
-pub const eBone = enum(c_int) {
+pub const Bone = enum(c_int) {
     SKEL_ROOT = 0x0,
     SKEL_Pelvis = 0x2e28,
     SKEL_L_Thigh = 0xe39f,
@@ -777,7 +777,7 @@ pub const eBone = enum(c_int) {
     IK_Root = 0xdd1c,
 };
 
-pub const eFiringPattern = enum(w.DWORD) {
+pub const FiringPattern = enum(w.DWORD) {
     FullAuto = 0xC6EE6B4C,
     BurstFire = 0xD6FF6D61,
     BurstInCover = 0x026321F1,
@@ -796,7 +796,7 @@ pub const eFiringPattern = enum(w.DWORD) {
     BurstFireTank = 0xE2CA3A71,
 };
 
-pub const eFont = enum(c_int) {
+pub const Font = enum(c_int) {
     ChaletLondon = 0,
     HouseScript = 1,
     Monospace = 2,
@@ -804,7 +804,7 @@ pub const eFont = enum(c_int) {
     Pricedown = 7,
 };
 
-pub const eVehicleColor = enum(c_int) {
+pub const VehicleColor = enum(c_int) {
     MetallicBlack = 0,
     MetallicGraphiteBlack = 1,
     MetallicBlackSteel = 2,
@@ -965,7 +965,7 @@ pub const eVehicleColor = enum(c_int) {
     BrushedGold = 159,
 };
 
-pub const eVehicleDoor = enum(c_int) {
+pub const VehicleDoor = enum(c_int) {
     FrontLeftDoor = 0,
     FrontRightDoor = 1,
     BackLeftDoor = 2,
@@ -975,7 +975,7 @@ pub const eVehicleDoor = enum(c_int) {
     Trunk2 = 6,
 };
 
-pub const eVehicleLockStatus = enum(c_int) {
+pub const VehicleLockStatus = enum(c_int) {
     None = 0,
     Unlocked = 1,
     Locked = 2,
@@ -986,14 +986,14 @@ pub const eVehicleLockStatus = enum(c_int) {
     CannotBeTriedToEnter = 10,
 };
 
-pub const eVehicleLandingGear = enum(c_int) {
+pub const VehicleLandingGear = enum(c_int) {
     Deployed = 0,
     Closing = 1,
     Opening = 2,
     Retracted = 3,
 };
 
-pub const eVehicleMod = enum(c_int) {
+pub const VehicleMod = enum(c_int) {
     Spoilers = 0,
     FrontBumper = 1,
     RearBumper = 2,
@@ -1015,21 +1015,21 @@ pub const eVehicleMod = enum(c_int) {
     BackWheels = 24, // only for motocycles
 };
 
-pub const eVehicleNeonLight = enum(c_int) {
+pub const VehicleNeonLight = enum(c_int) {
     Left = 0,
     Right = 1,
     Front = 2,
     Back = 3,
 };
 
-pub const eVehicleRoofState = enum(c_int) {
+pub const VehicleRoofState = enum(c_int) {
     Closed,
     Opening,
     Opened,
     Closing,
 };
 
-pub const eVehicleSeat = enum(c_int) {
+pub const VehicleSeat = enum(c_int) {
     None = -3,
     Any = -2,
     Driver = -1,
@@ -1040,13 +1040,13 @@ pub const eVehicleSeat = enum(c_int) {
     RightRear = 2,
 };
 
-pub const eVehicleToggleMod = enum(c_int) {
+pub const VehicleToggleMod = enum(c_int) {
     Turbo = 18,
     TireSmoke = 20,
     XenonHeadlights = 22,
 };
 
-pub const eVehicleWheelType = enum(c_int) {
+pub const VehicleWheelType = enum(c_int) {
     Sport = 0,
     Muscle = 1,
     Lowrider = 2,
@@ -1057,14 +1057,14 @@ pub const eVehicleWheelType = enum(c_int) {
     HighEnd = 7,
 };
 
-pub const eVehicleWindow = enum(c_int) {
+pub const VehicleWindow = enum(c_int) {
     FrontRight = 1,
     FrontLeft = 0,
     BackRight = 3,
     BackLeft = 2,
 };
 
-pub const eVehicleWindowTint = enum(c_int) {
+pub const VehicleWindowTint = enum(c_int) {
     None = 0,
     PureBlack = 1,
     DarkSmoke = 2,
@@ -1074,14 +1074,14 @@ pub const eVehicleWindowTint = enum(c_int) {
     Green = 6,
 };
 
-pub const eNumberPlateMounting = enum(c_int) {
+pub const NumberPlateMounting = enum(c_int) {
     FrontAndRear = 0,
     Front = 1,
     Rear = 2,
     None = 3,
 };
 
-pub const eNumberPlateType = enum(c_int) {
+pub const NumberPlateType = enum(c_int) {
     BlueOnWhite1 = 0,
     YellowOnBlack = 1,
     YellowOnBlue = 2,
@@ -1090,7 +1090,7 @@ pub const eNumberPlateType = enum(c_int) {
     NorthYankton = 5,
 };
 
-pub const eVehicleClass = enum(c_int) {
+pub const VehicleClass = enum(c_int) {
     Compacts = 0,
     Sedans = 1,
     SUVs = 2,
@@ -1115,7 +1115,7 @@ pub const eVehicleClass = enum(c_int) {
     Trains = 21,
 };
 
-pub const eExplosionType = enum(c_int) {
+pub const ExplosionType = enum(c_int) {
     Grenade = 0,
     GrenadeL = 1,
     StickyBomb = 2,
@@ -1157,7 +1157,7 @@ pub const eExplosionType = enum(c_int) {
     Valkyrie = 38,
 };
 
-pub const eIntersectFlags = enum(c_int) {
+pub const IntersectFlags = enum(c_int) {
     Everything = -1,
     Map = 1,
     MissionEntities = 2,
@@ -1170,7 +1170,7 @@ pub const eIntersectFlags = enum(c_int) {
     Unk4 = 512,
 };
 
-pub const eMarkerType = enum(c_int) {
+pub const MarkerType = enum(c_int) {
     UpsideDownCone = 0,
     VerticalCylinder = 1,
     ThickChevronUp = 2,
@@ -1202,7 +1202,7 @@ pub const eMarkerType = enum(c_int) {
     DebugSphere = 28,
 };
 
-pub const eRelationship = enum(c_int) {
+pub const Relationship = enum(c_int) {
     Hate = 5,
     Dislike = 4,
     Neutral = 3,
@@ -1212,11 +1212,11 @@ pub const eRelationship = enum(c_int) {
     Pedestrians = 255, // or neutral
 };
 
-pub const eRopeType = enum(c_int) {
-    RopeTypeNormal = 4,
+pub const RopeType = enum(c_int) {
+    Normal = 4,
 };
 
-pub const eWeapon = enum(w.DWORD) {
+pub const Weapon = enum(w.DWORD) {
     Knife = 0x99B507EA,
     Nightstick = 0x678B81B1,
     Hammer = 0x4E875F73,
@@ -1273,7 +1273,7 @@ pub const eWeapon = enum(w.DWORD) {
     Unarmed = 0xA2719263,
 };
 
-pub const eWeaponGroup = enum(w.DWORD) {
+pub const WeaponGroup = enum(w.DWORD) {
     Unarmed = 0xA00FC1E4,
     Melee = 0xD49321D4,
     Pistol = 0x18D5FA97,
@@ -1287,7 +1287,7 @@ pub const eWeaponGroup = enum(w.DWORD) {
     PetrolCan = 0x5F1BE07C,
 };
 
-pub const eWeaponTint = enum(c_int) {
+pub const WeaponTint = enum(c_int) {
     Normal = 0,
     Green = 1,
     Gold = 2,
@@ -1298,7 +1298,7 @@ pub const eWeaponTint = enum(c_int) {
     Platinum = 7,
 };
 
-pub const ePickupType = enum(w.DWORD) {
+pub const PickupType = enum(w.DWORD) {
     CustomScript = 0x2C014CA6,
     VehicleCustomScript = 0xA5B8CAA9,
     Parachute = 0x6773257D,
@@ -1377,7 +1377,7 @@ pub const ePickupType = enum(w.DWORD) {
     AmmoGrenadeLauncherMP = 0xA421A532,
 };
 
-pub const eHudComponent = enum(c_int) {
+pub const HudComponent = enum(c_int) {
     Main = 0,
     WantedStars,
     WeaponIcon,
