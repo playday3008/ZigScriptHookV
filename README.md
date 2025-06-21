@@ -128,6 +128,9 @@ _ = ScriptHookV.Invoker.invoke;
 </p>
 </details>
 
+<details><summary>Functions</summary>
+<p>
+
 ```zig
 _ = ScriptHookV.createTexture;
 _ = ScriptHookV.drawTexture;
@@ -156,6 +159,9 @@ _ = ScriptHookV.getScriptHandleBaseAddress;
 _ = ScriptHookV.eGameVersion;
 _ = ScriptHookV.getGameVersion;
 ```
+
+</p>
+</details>
 
 ## Contributing
 
