@@ -1,4 +1,5 @@
 pub const eGameVersion = enum(c_int) {
+    VER_1_0_335_2_STEAM,
     VER_1_0_335_2_NOSTEAM,
     VER_1_0_350_1_STEAM,
     VER_1_0_350_2_NOSTEAM,
