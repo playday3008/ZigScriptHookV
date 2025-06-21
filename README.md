@@ -1,6 +1,6 @@
 # ZigScriptHookV
 
-ScriptHookV wrapper for Zig.
+Zig wrapper for ScriptHookV.
 
 ## Usage
 
